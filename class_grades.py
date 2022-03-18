@@ -53,6 +53,9 @@
 # result = grades / 3
 # print("Average Grade {0:.2f}%".format(result))
 
+"""
+CODE REFACTOR USING LOOP
+"""
 grades = []
 
 for i in range(5):
@@ -60,8 +63,8 @@ for i in range(5):
     grades.append(float(input("Enter the grade: ")))
 
 grades.sort()
-grades = grades[2:]
-grades = sum(grades)
-result = grades / 3
+grades = sum(grades[2:]) / 3
+# grades = sum(grades)
+# result = grades / 3
 
-print(grades, "results", result)
+print("Average Grade {0:2f}%".format(grades))
