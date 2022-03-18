@@ -58,4 +58,10 @@ grades = []
 for i in range(5):
     print(i)
     grades.append(float(input("Enter the grade: ")))
-print(grades)
+
+grades.sort()
+grades = grades[2:]
+grades = sum(grades)
+result = grades / 3
+
+print(grades, "results", result)
