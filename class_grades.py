@@ -53,18 +53,12 @@
 # result = grades / 3
 # print("Average Grade {0:.2f}%".format(result))
 
-"""
-CODE REFACTOR USING LOOP
-"""
+
+
 grades = []
 
 for i in range(5):
     print(i)
     grades.append(float(input("Enter the grade: ")))
 
-grades.sort()
-grades = sum(grades[2:]) / 3
-# grades = sum(grades)
-# result = grades / 3
-
-print("Average Grade {0:2f}%".format(grades))
+print(grades)
